@@ -97,7 +97,7 @@ console.log(`The last car in the inventory is a ${lastCar.car_make} ${lastCar.ca
 let carModels = [];
 
 for (let i = 0; i<inventory.length; i++){
-  carModels.push(inventory[i].car_model);
+  carModels = carModels.concat(inventory[i].car_model);
 }
 
 let carModelsSorted = [];
